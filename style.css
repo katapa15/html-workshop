@@ -5,6 +5,8 @@ body {
     flex-direction: column;
     gap: 3em; /* vahe elementide vahel */
     align-items: center;
+    background-image: url("https://rimibaltic-web-res.cloudinary.com/image/upload/c_fill,f_auto,h_483,q_auto,w_852/v1/web-cms/70a93fde277fa85ec1d8b156093cc813eca2f241.jpg");
+    background-size: contain;
 }
 /* #-ga viitame elemendile, millel on selline id */
 #photo {
@@ -32,7 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #D9D9D9;
+    background-color: #FCB5B5;
     padding: 5em 1.5em 1.5em;
 }
 .icon {
@@ -53,4 +55,13 @@ button {
 button:hover {
     background-color: #C8C6C6;
     cursor: pointer;
+}
+h1 {
+    color: #FCB5B5;
+    text-align: right;
+    background-color: green;
+    letter-spacing: 5px;
+}
+p {
+    color: red;
 }
