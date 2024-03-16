@@ -7,12 +7,14 @@ body {
     align-items: center;
     background-image: url("https://rimibaltic-web-res.cloudinary.com/image/upload/c_fill,f_auto,h_483,q_auto,w_852/v1/web-cms/70a93fde277fa85ec1d8b156093cc813eca2f241.jpg");
     background-size: contain;
+    font-family: "Josefin Sans";
 }
 /* #-ga viitame elemendile, millel on selline id */
 #photo {
     max-width: 25em;
     max-height: 30em;
 }
+
 /* .-ga viitame elemenditele, millel on selline class */
 .container {
     display: flex;
@@ -26,6 +28,7 @@ body {
     max-height: 25em;
     overflow-x: hidden;
     overflow-y: auto;
+    text-align: center;
 }
 
 .card {
@@ -44,7 +47,10 @@ iframe {
     width: 50em;
     height: 28em;
 }
-
+#hula{
+    height: 200px;
+    width: 250px;
+}
 button {
     width: 20em;
     border: none;
@@ -58,10 +64,33 @@ button:hover {
 }
 h1 {
     color: #FCB5B5;
-    text-align: right;
+    text-align: center;
     background-color: green;
-    letter-spacing: 5px;
+    letter-spacing: 7px;
+    font-size: 64pt
+;
 }
 p {
     color: red;
+}
+.blink{
+     animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes example {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(3600deg);}
+
+}
+.small-img{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
 }
